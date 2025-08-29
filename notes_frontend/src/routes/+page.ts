@@ -1,3 +1,7 @@
-// since there's no dynamic data here, we can prerender
-// it so that it gets served as a static asset in production
+/**
+ * PUBLIC_INTERFACE
+ * export const prerender
+ * This flag tells SvelteKit that the root page can be statically prerendered,
+ * as the app uses localStorage and has no server-side dynamic data needs.
+ */
 export const prerender = true;
